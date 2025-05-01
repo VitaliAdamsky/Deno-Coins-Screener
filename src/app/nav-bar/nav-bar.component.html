@@ -1,4 +1,15 @@
 <mat-toolbar class="container">
   <app-coin-menu></app-coin-menu>
-  <span></span>
+  <div *ngIf="!isRotating">
+    <button mat-icon-button matTooltip="Coins Refreshment" (click)="onRunCoinsRefreshmentProcdure()">
+      <mat-icon style="cursor: pointer;">handyman</mat-icon>
+    </button>
+  </div>
+  <div *ngIf="isRotating">
+    <app-spinner></app-spinner>
+  </div>
+  <button mat-icon-button matTooltip="Price Levels Website" (click)="onGoToPriceLevelsWebsite()">
+    <mat-icon style="cursor: pointer;">attach_money</mat-icon>
+  </button>
+
 </mat-toolbar>

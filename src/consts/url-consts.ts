@@ -17,19 +17,6 @@ export const WS = 'ws';
 const baseURL = env.baseURL;
 export const coinsUrl = `${baseURL}get-all-coins`;
 
-export const SANTIMENT_URLS = {
-  echartsUrl: `${baseURL}/santiment/echarts`,
-  dataMissingUrl: `${baseURL}/santiment/coins/data-missing`,
-};
-
-export const ALERTS_URLS = {
-  alertsUrl: `${baseURL}/alerts`,
-  alertsAddOneUrl: `${baseURL}/alerts/add/one`,
-  alertsDeleteManyUrl: `${baseURL}/alerts/delete/many`,
-  alertsUpdateOneUrl: `${baseURL}/alerts/update/one`,
-  alertsMoveManyUrl: `${baseURL}/alerts/move/many`,
-};
-
 export const COINS_URLS = {
   coinsUrl: `${baseURL}/coins`,
   coinsAddOneUrl: `${baseURL}/coins/add/one`,
@@ -41,16 +28,4 @@ export const COINS_URLS = {
   coinsRepoStatisticsUrl: `${baseURL}/coins/repo/statistics`,
   coinsByCollectionNameUrl: `${baseURL}/coins/collection-name`,
   coinsRunRefreshmentUrl: `${baseURL}/coins/refreshment-procedure/run`,
-};
-
-export const BINACE_WS_URLS = {
-  binanceWsStartUrl: `${baseURL}/ws/binance/start`,
-  binanceWsPauseUrl: `${baseURL}/ws/binance/pause`,
-  binanceWsStatusUrl: `${baseURL}/ws/binance/status`,
-};
-
-export const BYBIT_WS_URLS = {
-  bybitWsStartUrl: `${baseURL}/ws/bybit/start`,
-  bybitWsPauseUrl: `${baseURL}/ws/bybit/pause`,
-  bybitWsStatusUrl: `${baseURL}/ws/bybit/status`,
 };

@@ -28,7 +28,7 @@ export class CoinsProviderService {
           this.snackbarService.showSnackBar(
             msg,
             '',
-            4000,
+            3000,
             SnackbarType.Warning
           );
         }),
